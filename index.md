@@ -5,4 +5,4 @@ System.out.println("Hello world");
 ```
 
 *Second page:*
-[Link](https://jhan-p.github.io/cse15l-lab-reports/trial.html)
+[trial.html](https://jhan-p.github.io/cse15l-lab-reports/trial.html)
