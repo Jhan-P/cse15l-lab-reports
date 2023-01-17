@@ -51,4 +51,4 @@ It might be good to practice running some commands to get used to using the serv
   
 Here is an example of the `ls -a` command:
  
-![Image](ls-and-a.jpg)
+![Image](ls%20and%20a.jpg)
