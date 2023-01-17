@@ -13,7 +13,7 @@ If the page notifies you that a password has not been set, go ahead and set a pa
 
 Visit https://code.visualstudio.com/ and follow the instructions on screen to download VSCode for your operating system. 
 
-*Screenshot*
+![Image](vscode.jpg)
 
 Click on the `Terminal` tab and select the `New Terminal` option; a terminal should open at the bottom of your screen. 
 
@@ -52,3 +52,11 @@ It might be good to practice running some commands to get used to using the serv
 Here is an example of the `ls -a` command:
  
 ![Image](ls%20and%20a.jpg)
+
+Here is an example of the `cat` command displaying a file's contents:
+  
+![Image](cat_command.jpg)
+  
+Here is an example of the `cd` command going to a different directory:
+  
+![Image](cd_command.jpg)
