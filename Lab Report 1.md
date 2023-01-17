@@ -41,4 +41,14 @@ It might be good to practice running some commands to get used to using the serv
 
 `cat` <file directory> - displays the contents of the given file
   
-`ls` - displays all files and directories in the current directory
+`ls` or `ls -t` - displays all files and directories in the current directory
+
+`ls -a` - shows all files in the current directory, including files that begin with a ‘.’
+ 
+`ls -l` - shows all files in the current directory with more information regarding file privacy and creation date
+
+`ls -lat` - combines all aspects of the three commands above this one
+  
+Here is an example of the `ls -a` command:
+ 
+*Screenshot*
