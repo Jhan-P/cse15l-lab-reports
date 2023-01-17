@@ -21,11 +21,11 @@ Inside, type `ssh cs15lwi23zz@ieng6.ucsd.edu`, replacing the part before the '@'
 
 If this is your first time remotely connecting to the server, you will be met with a message that looks like this:
 
-*Screenshot*
+![Image](step%203_1.jpg)
 
 If done correctly, you should be met with a screen that looks similar to this:
 
-*Screenshot*
+![Image](step%202.jpg)
 
 You have connected to the UCSD remote server!
 
