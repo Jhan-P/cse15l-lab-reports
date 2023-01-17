@@ -34,6 +34,11 @@ You have connected to the UCSD remote server!
 It might be good to practice running some commands to get used to using the server easily. Here is a list of commands and their functions:
 
 `cd` - takes you to the home directory
+
 `cd` <directory> - takes you to the specified directory
+
 `cp` <file directory> - copies the given file
+
 `cat` <file directory> - displays the contents of the given file
+  
+`ls` - displays all files and directories in the current directory
