@@ -121,3 +121,78 @@ public class Server {
 }
 ```
 
+## Part 2 - Bug Troubleshooting
+
+For this section, I will be discussing the `reverseInPlace` method from `ArrayExamples.java` from Lab 3.
+
+The method had been given to us in this form:
+```java
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+The purpose of this method was to reverse an array without creating a new one. 
+
+When running this JUnit test for this method,
+```java
+@Test
+ public void testReverseInPlace2() {
+   int[] input1 = { 1, 2, 3, 4, 5 }; // Failure inducing input
+   ArrayExamples.reverseInPlace(input1);
+   assertArrayEquals(new int[]{ 5, 4, 3, 2, 1 }, input1);
+ }
+```
+we were met with the following error messages:
+```java
+testReverseInPlace2(ArrayTests)
+arrays first differed at element [3]; expected:<2> but was:<4>  // No reversal occurred
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReverseInPlace2(ArrayTests.java:16)
+        ... 32 trimmed
+Caused by: java.lang.AssertionError: expected:<2> but was:<4>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+        ... 38 more
+2) testReversed2(ArrayTests)
+arrays first differed at element [0]; expected:<9> but was:<0>  // Old array was being returned instead of the new one
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+        at org.junit.Assert.internalArrayEquals(Assert.java:534)
+        at org.junit.Assert.assertArrayEquals(Assert.java:418)
+        at org.junit.Assert.assertArrayEquals(Assert.java:429)
+        at ArrayTests.testReversed2(ArrayTests.java:29)
+        ... 32 trimmed
+Caused by: java.lang.AssertionError: expected:<9> but was:<0>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+        ... 38 more
+```
+
+When passing any array through the method, the same exact array was returned, unreversed; for instance, inputting {1, 2, 3, 4, 5} returned {1, 2, 3, 4, 5}.
+An example of an array that passed the JUnit test was {1, 2, 3, 2, 1}, since this array is the same forwards and backwards.
+
+Here is an updated, working version of the method, with the reasoning for each line provided in comments:
+
+```java
+ static void reverseInPlace(int[] arr) {
+   for(int i = 0; i < arr.length/2; i++){ //Only need to traverse half the list
+     int curr = arr[i]; // Need to store arr[i] so it doesn’t get lost
+     arr[i] = arr[arr.length - i - 1]; // Swap values in corresponding indices
+     arr[arr.length - i - 1] = curr; // Swap values in corresponding indices
+   }
+```
+
