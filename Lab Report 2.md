@@ -7,6 +7,7 @@ StringServer.java creates a local server on port 7777. By navigating to http://l
 Here is an example:
 
 ![Image](Hello.jpg)
+
+Here, the query is "Hello". Navigating to the `/add-message` path calls the `handleRequest` method in StringServer.java. The string of characters after `/add-message/` is saved in an array called `parameters`, with index 0 containing everything to the left of the `=`, and index 1 containing everything to the right of the `=`. The characters after the `?s=` will be saved in a String called `result`. 
+
 ![Image](there.jpg)
-![Image](how%20are%20you.jpg)
-![Image](doing.jpg)
