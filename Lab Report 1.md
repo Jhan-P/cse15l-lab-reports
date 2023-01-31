@@ -5,8 +5,6 @@
 Go to https://sdacs.ucsd.edu/~icc/index.php.
 Enter your username and password into the given fields to access the list of your accounts. Under the subheading `Additional Accounts`, there should be a button labelled with an account name that begins with 'cse15lwi23'; click on this. 
 
-*Screenshot*
-
 If the page notifies you that a password has not been set, go ahead and set a password for the account. This might take a couple minutes to go into effect.
 
 ## Step 2 - Downloading Visual Studio Code and remotely connecting to the server
