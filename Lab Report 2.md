@@ -199,5 +199,5 @@ Storing `arr[i]` in a separate variable ensures that its value doesn't get lost.
 
 ## Part 3 - Reflection
 
-This past two weeks in lab, I learned how to remotely set up a server. I have done projects before where I have used free online servers to host content, but I had never hosted one on my own machine (or on a remote machine for that matter).
+These past two weeks in lab, I learned how to remotely set up a server. I have done projects before where I have used free online servers to host content, but I had never hosted one on my own machine (or on a remote machine for that matter).
 
