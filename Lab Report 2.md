@@ -8,5 +8,5 @@ Here is an example:
 
 ![Image](Hello.jpg)
 ![Image](there.jpg)
-![Image](how are you.jpg)
+![Image](how%20are%20you.jpg)
 ![Image](doing.jpg)
