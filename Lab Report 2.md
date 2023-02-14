@@ -183,7 +183,16 @@ Caused by: java.lang.AssertionError: expected:<9> but was:<0>
 ```
 
 When passing any array through the method, the same exact array was returned, unreversed; for instance, inputting {1, 2, 3, 4, 5} returned {1, 2, 3, 4, 5}.
-An example of an array that passed the JUnit test was {1, 2, 3, 2, 1}, since this array is the same forwards and backwards.
+An example of an array that passed the JUnit test was {3}, since this array is the same forwards and backwards, as shown in the following code:
+
+```java
+@Test
+public void reverseInPlaceNoFailure() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+}
+```
 
 Here is an updated, working version of the method, with the reasoning for each line provided in comments:
 
