@@ -17,4 +17,5 @@ Text
 Text
 
 Information acquired from the following source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
-<I apologize for not having the full document ready; ran out of time throughout the day. Will have it ready in time for the next submission. Thanks.>
+
+<<I apologize for not having the full document ready; ran out of time throughout the day. Will have it ready in time for the next submission. Thanks.>>
