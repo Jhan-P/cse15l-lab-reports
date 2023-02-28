@@ -54,9 +54,17 @@ I then pressed "Ctrl+O", the <enter> key, and "Ctrl+X" to save the file under th
 
 ## Step 5 - Running and confirming the success of the JUnit tests
 
-Instead of findind and copy-pasting the same commands from Step 3, I pressed the up arrow key 4 times to access the compilation command, pressed enter, then pressed the up arrow key 4 times again to access the execution command, and pressed enter to run the JUnit file:
+Instead of finding and copy-pasting the same commands from Step 3, I accessed them from my command line history by pressing the up arrow key 4 times to access the compilation command, pressing enter, then pressing the up arrow key 4 times again to access the execution command, and pressing enter to run the JUnit file:
 
 ![Image](8.jpg)
 
 The bottom of the output shows zero failures, meaning the code fix from step 4 worked.
 
+## Step 6 - Committing and pushing the changes
+
+To update the `ListExamples.java` file, I typed `git add List<tab>.java`. I then committed the changes using the command `git commit -m "Bug fix". Finally, I pushed the changes with `git push origin main`. Here are the input and output of that process:
+
+![Image](9.jpg)
+
+________________________________________________________________________________________________
+The files have now been fixed and are updated in my forked repository!
