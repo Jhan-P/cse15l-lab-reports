@@ -58,4 +58,5 @@ Example 2:
 
 The command above returned the current directory.
 
+____________________________________________________________________________________________________________________________________________________________
 Information acquired from the following source: https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
