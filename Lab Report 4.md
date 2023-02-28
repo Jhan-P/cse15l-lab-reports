@@ -63,7 +63,7 @@ The bottom of the output shows zero failures, meaning the code fix from step 4 w
 
 ## Step 6 - Committing and pushing the changes
 
-To update the `ListExamples.java` file, I typed `git add List<tab>.java`. I then committed the changes using the command `git commit -m "Bug fix". Finally, I pushed the changes with `git push origin main`. Here are the input and output of that process:
+To update the `ListExamples.java` file, I typed `git add List<tab>.java`. I then committed the changes using the command `git commit -m "Bug fix"`. Finally, I pushed the changes with `git push origin main`. Here are the input and output of that process:
 
 ![Image](9.jpg)
 
