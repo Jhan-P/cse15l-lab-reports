@@ -52,3 +52,11 @@ I switched the variable `index1` with `index2`.
 
 I then pressed "Ctrl+O", the <enter> key, and "Ctrl+X" to save the file under the given name and exit the file editor (in that order).
 
+## Step 5 - Running and confirming the success of the JUnit tests
+
+Instead of findind and copy-pasting the same commands from Step 3, I pressed the up arrow key 4 times to access the compilation command, pressed enter, then pressed the up arrow key 4 times again to access the execution command, and pressed enter to run the JUnit file:
+
+![Image](8.jpg)
+
+The bottom of the output shows zero failures, meaning the code fix from step 4 worked.
+
