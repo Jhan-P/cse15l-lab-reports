@@ -29,6 +29,7 @@ I copied the given URL and ran the following command (with the actual URL replac
 After going into the `lab7` directory, I entered the following commands:
 
 Compiling the java files: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
+
 Executing the JUnit file: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` 
 (Note: I typed `List<tab>Tests` at the end)
 
