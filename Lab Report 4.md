@@ -29,10 +29,26 @@ I copied the given URL and ran the following command (with the actual URL replac
 After going into the `lab7` directory, I entered the following commands:
 
 Compiling the java files: `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
-Executing the JUnit file: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
+Executing the JUnit file: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` 
+(Note: I typed "List<tab>Tests" at the end)
 
 Here are the input and output of those commands:
 
 ![Image](5.jpg)
 
 The output at the bottom shows that there is 1 failure as expected.
+
+## Step 4 - Editing and fixing the file
+
+I typed `nano List<tab>.java` to access the file editor.
+
+I scrolled down with the down and right arrow keys until I got to the follow code segment:
+
+![Image](6.jpg)
+
+I switched the variable `index1` with `index2`.
+
+![Image](7.jpg)
+
+I then pressed "Ctrl+O", the <enter> key, and "Ctrl+X" to save the file under the given name and exit the file editor (in that order).
+
