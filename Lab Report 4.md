@@ -22,7 +22,7 @@ I copied the given URL and ran the following command (with the actual URL replac
 
 ![Image](4.jpg)
 
-`lab7` is now located in our remote directory.
+`lab7` is now located in my remote directory.
 
 ## Step 3 - Running and confirming the failure of the JUnit tests
 
