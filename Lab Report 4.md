@@ -51,7 +51,7 @@ I switched the variable `index1` with `index2`.
 
 ![Image](7.jpg)
 
-I then pressed "Ctrl+O", the `<enter>` key, and "Ctrl+X" to save the file under the given name and exit the file editor (in that order).
+I then pressed `Ctrl+O`, the `<enter>` key, and `Ctrl+X` to save the file under the given name and exit the file editor (in that order).
 
 ## Step 5 - Running and confirming the success of the JUnit tests
 
