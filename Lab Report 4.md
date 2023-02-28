@@ -16,7 +16,7 @@ On the GitHub page containing my fork, I pressed the green "Code" dropdown and c
 
 ![Image](2.jpg)
 
-I copied the given URL and ran the following command (with the actual URL replacing the "<URL>" from the screenshot):
+I copied the given URL and ran the following command (with the actual URL replacing the `<URL>` from the screenshot):
 
 ![Image](3.jpg)
 
