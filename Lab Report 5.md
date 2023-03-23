@@ -1,4 +1,4 @@
-# Lab Report 5 - Exploring the `grep` command
+# Lab Report 5 - Exploring the `grep` command 
 
 ## The `grep` command
 Standing for "global regular expression print", the `grep` command in Linux is used to locate text patterns within specific files or files within a directory. 
